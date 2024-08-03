@@ -9,13 +9,7 @@ const XrCubeContainer = () => {
     <>
       <ARButton
         sessionInit={{
-          optionalFeatures: [
-            "local-floor",
-            "bounded-floor",
-            "hand-tracking",
-            "layers",
-            "dom-overlay",
-          ],
+          optionalFeatures: ["dom-overlay"],
         }}
       />
       <Canvas>
