@@ -7,7 +7,17 @@ import { ARButton, XR } from "@react-three/xr";
 const XrCubeContainer = () => {
   return (
     <>
-      <ARButton />
+      <ARButton
+        sessionInit={{
+          optionalFeatures: [
+            "local-floor",
+            "bounded-floor",
+            "hand-tracking",
+            "layers",
+            "dom-overlay",
+          ],
+        }}
+      />
       <Canvas>
         <XR>
           <XrCube />
